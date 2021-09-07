@@ -143,7 +143,7 @@ local t = {
 Acceptor向Proposer提供两种RPC服务，Prepare（简称P操作）和Accept（简称A操作）。
 
 ```lua
-P(e) -> { true, t.p_e, t.a_e, t.a_v } || { false, t.p_e }
+P(e) -> { true, t.a_e, t.a_v } || { false, t.p_e }
 ```
 
 ```lua
